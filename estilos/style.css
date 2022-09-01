@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+ html, body{
+    
+    width: 100%;
+    background-color: white;
+  
+}
+
+main {
+    height: 92vmax;
+}
+.subheader {
+    background: #1F3341;
+    height: 30vh;
+}
+
+header {
+    position: relative;
+    top: 5vh;
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+    height: 60vh;
+    background: black url("../imagens/ama-estudar-linguas-conheca-as-profissoes-tradutor-e-interprete.jpg") no-repeat center center;
+    background-size: cover;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.747);
+    border-radius: 15px;
+    
+}
+
+.background {
+    position: relative;
+    top: 0vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.897);
+    border-radius: 15px;
+    
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  padding-top: 20px;
+  
+}
+
+.span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    text-align: center;
+  
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.753);
+    font-size: 2.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    
+}
+
+strong {
+    color: #00597B;
+    font-size: 2.5em;
+    text-shadow: 10px 10px 15px black;
+}
+
+
+
+.logo {
+    height: 45px;
+}
+.menu {
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.menu div {
+    width: 25px;
+    height: 2px;
+    margin: 8px;
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+   
+    
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a {
+    color: white;
+    padding: 15px 20px;
+    outline: 0;
+    display: inline-block;
+}
+
+/*.nav-list li ul.dropdown {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: #1f3341;
+    padding-top: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 0px 8px 8px 8px;
+}
+
+.nav-list li:hover ul.dropdown li a {
+    padding: 15px 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.nav-list li:hover ul.dropdown {
+    display: block;
+}
+
+.nav-list ul.dropdown li a {
+    background: none;
+}*/
+
+.nav-list li:hover a {
+    background-color: #1f3341e1;
+    color: antiquewhite !important;
+    border-radius: 8px;
+}
+
+/*.nav-list li:hover a.no-bottom-redius {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.nav-list li ul.dropdown li:last-child a { border-bottom: none;}
+
+
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: relative;
+    top: -10px;
+    right: -65px;
+    content: '';
+    display: flex;
+}*/
+
+
+ul.img {
+    position: relative;
+    top: 60vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.img li .texto {
+    position: relative;
+    top: -60px;
+    padding: 0px;
+    margin-top: 0;
+    margin: 10px;
+    margin-bottom: 40px;
+    color: #00587b91;
+    line-height: 1.5em;
+    text-align: center;
+    visibility: hidden;
+    
+    transition: 0.1s ease-in-out;
+}
+
+.texto h2 {
+    margin-bottom: 10px;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.329);
+}
+
+li.show {
+    transition: 0.6s;
+}
+
+li.show:hover {
+    height: 370px;
+    transition: 0.6s;
+}
+
+ li.show:hover .texto {
+    visibility: visible;
+    transition-delay: 0.3s;
+}
+
+ul.img li {
+    width: 190px;
+    background: rgba(0, 0, 0, 0.267);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.192);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    height: 70px;
+}
+
+ul.img li a {
+    margin-bottom: 0;
+}
+
+.card01, .card02, .card03 {
+    position: relative;
+    top: -50px;
+    background: #1f3341;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+
+    transition: 0.9s;
+   
+}
+
+.show:hover .card01 {
+    background: url('../imagens/flag-great-britain-united-kingdom-union-jack-wallpaper-thumb.jpg')no-repeat center center; 
+    background-size: cover;
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.774);
+    transform: translate(-10px, -10px);
+    transition: 0.6s;
+}
+
+.show:hover .card02 {
+    background: url('../imagens/716930.jpg')no-repeat center center; 
+    background-size: cover;
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px black;
+    transform: translate(-10px, -10px);
+    transition: 0.6s;
+}
+
+.show:hover .card03 {
+    background: url('../imagens/15480.jpg')no-repeat center center; 
+    background-size: cover;
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px black;
+    transform: translate(-10px, -10px);
+    transition: 0.6s;
+}
+
+
+
+footer {
+    background: #1f334186;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-X: hidden;
+        
+    }
+
+    html, body {
+        height: 140vh;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .span
+     {
+        font-size: 1.7em;
+     }
+
+    .logo {
+        height: 30px;
+    }
+
+    header, .background {
+        position: relative;
+        top: 0vh;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    header {
+       background: url('../imagens/fundo2.jpg') no-repeat center center;
+       background-size: cover;
+
+    }
+
+    header p {
+        position: absolute;
+        left: 50vw;
+        height: 20vh;;
+        font-size: 1.9em;
+    }
+
+    nav {
+        background-color: #1F3341;
+    }
+
+    .menu {
+        display: block;
+        
+        
+    }
+
+    .nav-list {
+        
+        position: absolute;
+        top: 11.9vh;
+        
+        width: 100vw;
+        height: 92vh;
+        background-color: #1F3341;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+
+
+    ul.img { 
+        position: relative;
+        top: 40vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.img li {
+        margin-bottom: 50px;
+        
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+   
+   
+
+}
+.menu.active {
+    
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.712);
+    border-radius: 50px;
+}
+.menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu.active .line2{
+    opacity: 0;
+}
+
+.menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
